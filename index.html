@@ -21,6 +21,17 @@
     </head>
 
     <body>
+         <!-- Back to top Button with Icon -->
+
+
+        <button class="back-to-home-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+        TOP
+    </button>
+
+
+
         <header>
             <nav class="navbar navbar-expand-lg custom-navbar sticky-top m-3">
                 <div class="container-fluid">
@@ -33,10 +44,11 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                      <a class="nav-link" href="#">Features</a>
-                      <a class="nav-link" href="#">Pricing</a>
-                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      <a class="nav-link active" aria-current="page" href="index.html">About Us</a>
+                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link" href="ceo.html">People</a>
+                      <a class="nav-link" href="donate.html">Donate</a>
+                      <a class="nav-link disabled" aria-disabled="true">FASHION SHOW COMING SOON!</a>
                     </div>
                   </div>
                 </div>
@@ -45,19 +57,18 @@
 
 
         <main class>
-            <div class="row m-2 ">
-            <div class="hero1 mt-3 rounded col-12 col-md-6 text-center">
+            <div class="row m-2 justify-content-center ">
+            <div class="hero1 mt-3 rounded col-12 col-md-5 text-center">
                 <div class=" text-center ">
                   <h1 class="">RUNWAY FOR HOPE</h1>
 
                   <div class="row justify-content-center">
-                  <button class= "contactbtn col-4 m-2 p-2 ">CONTACT US</button>
-                  <button class="contactbtn col-4 m-2 p-2">DONATE</button>
+<button class="contactbtn col-4 m-2 p-2" onclick="window.location.href='contact.html'">CONTACT US</button>                  <button class="contactbtn col-4 m-2 p-2">DONATE</button>
                 </div>
 
                 </div>
                 </div>
-                <div class="hero1 mt-3  rounded col-12 col-md-6">
+                <div class="hero1 mt-3  rounded col-12 col-md-7">
                   <!-- Placeholder for image carousel -->
                   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -69,26 +80,17 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
                             <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop" class="d-block w-100" alt="Beautiful Mountain Lake">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>🏔️ Mountain Serenity</h5>
-                                <p>Crystal clear waters reflecting majestic peaks in perfect harmony.</p>
-                            </div>
+                            
                         </div>
                         
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop" class="d-block w-100" alt="Enchanted Forest">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>🌲 Forest Magic</h5>
-                                <p>Sunlight dancing through ancient trees creates nature's own cathedral.</p>
-                            </div>
+                           
                         </div>
                         
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=400&fit=crop" class="d-block w-100" alt="Tropical Paradise">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>🏝️ Tropical Dreams</h5>
-                                <p>Where turquoise waters meet pristine white sand beaches.</p>
-                            </div>
+                            
                         </div>
                     </div>
                     
@@ -107,10 +109,10 @@
                   
                 </div>
 
-                <div class="row about m-3 rounded justify-content-center">
+                <div class="row about m-5 rounded abtcont justify-content-center">
                     <div class=" p-3">
                         
-                        <div class="container">
+                        <div class="container ">
                     
                             <!-- Card-Based About Sections -->
                             <div class="about-grid row m-3">

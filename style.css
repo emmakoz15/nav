@@ -539,7 +539,8 @@
     .feature-content h2 {
         font-size: 2.2rem;
     }
-
+}
+/* 
     .placeholder-image {
         height: 300px;
     }
@@ -562,4 +563,75 @@
         padding: 3rem 1.5rem;
     }
 }
- 
+  */
+
+
+
+
+/*form style*/
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+.contact-background {
+        background: linear-gradient(135deg,
+          rgba(255, 182, 193, 0.3) 0%,
+          rgba(221, 160, 221, 0.3) 35%,
+          rgba(173, 216, 230, 0.3) 100%);
+      }
+    
+
+              /* Back to Home Button Styles */
+        .back-to-home-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #CAF0F8, #DBE3FF, #EBDBFF);
+            border: none;
+            border-radius: 50px;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-to-home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #B8E8F0, #CAD6FF, #DCC9FF);
+        }
+
+        .back-to-home-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Home icon */
+        .home-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+       
