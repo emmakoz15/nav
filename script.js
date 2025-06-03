@@ -74,4 +74,33 @@
 })();
 
 
-//form
+//end form
+
+//navscroll
+
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.custom-navbar');
+            const scrolled = window.pageYOffset;
+            const scrollThreshold = 50;
+
+            if (scrolled > scrollThreshold) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links (only for anchor links)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });

@@ -1,97 +1,102 @@
 /*nav*/
-.custom-navbar {
-    background: linear-gradient(135deg, 
-        rgba(202, 240, 248, 0.9) 0%,   /* CAF0F8 */
-        rgba(219, 227, 255, 0.9) 35%,  /* DBE3FF */
-        rgba(235, 219, 255, 0.9) 100%  /* EBDBFF */
+ .custom-navbar {
+            background: linear-gradient(135deg, 
+                rgba(202, 240, 248, 0.9) 0%,   /* CAF0F8 */
+                rgba(219, 227, 255, 0.9) 35%,  /* DBE3FF */
+                rgba(235, 219, 255, 0.9) 100%  /* EBDBFF */
+            );
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            margin: 15px 20px;
+            padding: 8px 20px;
+            box-shadow: 
+                0 8px 32px rgba(202, 240, 248, 0.3),
+                0 4px 16px rgba(219, 227, 255, 0.2),
+                0 2px 8px rgba(235, 219, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+        }
 
-    );
-    
-    backdrop-filter: blur(10px);
-    border-radius: 25px;
-    box-shadow: 
-        0 8px 32px rgba(202, 240, 248, 0.3),
-        0 4px 16px rgba(219, 227, 255, 0.2),
-        0 2px 8px rgba(235, 219, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease-in-out;
-    
-}
+        .custom-navbar.scrolled {
+            background: linear-gradient(135deg, 
+                rgba(202, 240, 248, 0.3) 0%,   /* More transparent CAF0F8 */
+                rgba(219, 227, 255, 0.3) 35%,  /* More transparent DBE3FF */
+                rgba(235, 219, 255, 0.3) 100%  /* More transparent EBDBFF */
+            );
+            backdrop-filter: blur(15px);
+            box-shadow: 
+                0 4px 20px rgba(202, 240, 248, 0.15),
+                0 2px 10px rgba(219, 227, 255, 0.1),
+                0 1px 5px rgba(235, 219, 255, 0.05);
+        }
 
-.custom-navbar.scrolled {
-    background: linear-gradient(135deg, 
-        rgba(202, 240, 248, 0.3) 0%,   /* More transparent */
-        rgba(219, 227, 255, 0.3) 35%,  
-        rgba(235, 219, 255, 0.3) 100%  
-    );
-    backdrop-filter: blur(15px);
-    box-shadow: 
-        0 4px 20px rgba(202, 240, 248, 0.15),
-        0 2px 10px rgba(219, 227, 255, 0.1),
-        0 1px 5px rgba(235, 219, 255, 0.05);
-}
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #4a4a4a !important;
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-.navbar-brand {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #4a4a4a !important;
-    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+        .logo-placeholder {
+            width: 40px;
+            height: 40px;
+            background-image: url("images/Runway\ for\ Hope\ Inc-.png");
+            background-size: contain;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.logo-placeholder {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #EBDBFF, #DBE3FF);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+        .navbar-nav .nav-link {
+            color: #4a4a4a !important;
+            font-weight: 500;
+            margin: 0 8px;
+            padding: 8px 16px !important;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+        }
 
-.navbar-nav .nav-link {
-    color: #4a4a4a !important;
-    font-weight: 500;
-    margin: 0 8px;
-    padding: 8px 16px !important;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    position: relative;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
-}
+        .navbar-nav .nav-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: #2c2c2c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-.navbar-nav .nav-link:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: #2c2c2c !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+        .navbar-nav .nav-link.active {
+            background: rgba(255, 255, 255, 0.4);
+            color: #2c2c2c !important;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.navbar-nav .nav-link.active {
-    background: rgba(255, 255, 255, 0.4);
-    color: #2c2c2c !important;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        .navbar-toggler {
+            border: none;
+            padding: 6px 10px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.2);
+        }
 
-.navbar-toggler {
-    border: none;
-    padding: 6px 10px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.2);
-}
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
 
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.navbar-toggler-icon {
-    filter: brightness(0.8);
-}
+        .navbar-toggler-icon {
+            filter: brightness(0.8);
+        }
 
 
 
@@ -106,6 +111,10 @@
 
 
 /*hero*/
+.topSpace{
+    margin-top: 6rem;
+}
+
 .hero1 {
     padding: 40px 20px;
     background: #f2f2fc;
